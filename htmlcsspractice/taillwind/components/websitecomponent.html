@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website component</title>
+  </head>
+
+  <body
+    class="w-full h-screen p-6 text-blue-300"
+    style="background-image: url('nature2.jpg');"
+  >
+    <div class="h-auto p-8 bg-center bg-cover sm:h-auto">
+      <header>
+        <div
+          class="flex flex-col h-auto lg:flex-row lg:h-auto lg:justify-between"
+        >
+          <!-- image-logo -->
+
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center">
+              <img src="logo.png" class="w-8 h-8 rounded-full" alt="logo" />
+              <h1
+                class="ml-1 text-2xl font-extrabold text-white hover:text-blue-400"
+              >
+                Company
+              </h1>
+            </div>
+            <button onclick="toggleNavigation()" class="lg:hidden">
+              <svg
+                class="w-8 h-8 text-blue-500 fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- nevigation bar -->
+
+          <ul
+            id="navigationMenu"
+            class="flex flex-col justify-between flex-grow p-4 mt-8 text-blue-600 lg:hidden lg:flex-row lg:visible lg:mt-0 lg:items-center lg:border-0 lg:flex-grow-0 lg:w-2/4"
+          >
+            <a href="./newheader.html">
+              <li
+                class="p-4 text-center hover:bg-blue-300 hover:text-white lg:px-12"
+              >
+                About
+              </li>
+            </a>
+            <a href="../tailwindcss.html">
+              <li
+                class="p-4 text-center hover:bg-blue-300 hover:text-white lg:px-12"
+              >
+                How it works?
+              </li>
+            </a>
+
+            <a href="../Nature-picture.jpg-.jpg">
+              <li
+                class="p-4 text-center hover:bg-blue-300 hover:text-white lg:px-10"
+              >
+                Contact US
+              </li>
+            </a>
+          </ul>
+          <ul
+            id="navigationLarge"
+            class="flex flex-col hidden justify-between flex-grow p-4 mt-8 text-blue-600 lg:flex lg:flex-row lg:mt-0 lg:items-center lg:border-0 lg:flex-grow-0 lg:w-2/4"
+          >
+            <a href="./newheader.html">
+              <li
+                class="p-4 text-center hover:bg-blue-300 hover:text-white lg:px-12"
+              >
+                About
+              </li>
+            </a>
+            <a href="../tailwindcss.html">
+              <li
+                class="p-4 text-center hover:bg-blue-300 hover:text-white lg:px-12"
+              >
+                How it works?
+              </li>
+            </a>
+
+            <a href="../Nature-picture.jpg-.jpg">
+              <li
+                class="p-4 text-center hover:bg-blue-300 hover:text-white lg:px-10"
+              >
+                Contact US
+              </li>
+            </a>
+          </ul>
+        </div>
+      </header>
+      <div class="w-full lg:w-1/2">
+        <ul>
+          <li>
+            <h1 class="mb-4 text-2xl italic text-bold">
+              We are Creative <br />
+              Agency
+            </h1>
+          </li>
+          <li>
+            <p class="mb-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+              ullam, explicabo eos asperiores minima eligendi quam, veritatis
+              ratione incidunt consequuntur maiores, accusamus deleniti. Unde,
+              deleniti. Cum nisi quasi et impedit.
+            </p>
+          </li>
+          <li
+            class="flex flex-row justify-between mb-8 bg-white border-2 border-blue-400"
+          >
+            <input
+              class="flex-grow p-2 outline-none"
+              type="text"
+              placeholder="search something here...."
+            />
+            <img class="p-2" src="icons8-search.svg" alt="" />
+          </li>
+          <li class="flex justify-between divide-x-2 divide-green-400">
+            <button class="px-6 py-2 text-green-900 bg-blue-400">sign in</button
+            ><button class="px-4 py-2 text-green-400 focus:outline-none">
+              sign up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function toggleNavigation() {
+        var navigation = document.getElementById("navigationMenu");
+        if (!navigation.classList.contains("hidden")) {
+          navigation.classList.add("hidden");
+        } else {
+          navigation.classList.remove("hidden");
+        }
+      }
+    </script>
+  </body>
+  <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</html>

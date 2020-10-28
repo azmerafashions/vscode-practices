@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="container mx-auto p-6 w-full">
+    <header>
+      <div
+        class="flex flex-col h-screen border-blue-300 lg:flex-row lg:h-auto lg:border-2 lg:justify-between"
+      >
+        <!-- image-logo -->
+
+        <div
+          class="flex p-4 flex-row items-center border-2 justify-between lg:border-0"
+        >
+          <div class="flex flex-row items-center">
+            <img
+              src="Penguins.jpg"
+              class="w-24 h-24 rounded-full mr-8"
+              alt="logo"
+            />
+            <h1 class="text-2xl text-blue-900 font-extrabold">PASSION</h1>
+          </div>
+          <button class="lg:hidden">
+            <svg
+              class="fill-current text-blue-500 w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- nevigation bar -->
+
+        <ul
+          class="flex flex-col justify-between text-blue-600 mt-8 flex-grow border-2 p-4 lg:flex-row lg:mt-0 lg:items-center lg:border-0 lg:flex-grow-0 lg:w-2/4"
+        >
+          <a href="./newheader.html">
+            <li
+              class="p-4 border-2 border-blue-400 text-center hover:bg-blue-300 hover:text-white lg:px-12"
+            >
+              BLOG
+            </li>
+          </a>
+          <a href="../tailwindcss.html">
+            <li
+              class="p-4 border-2 border-blue-400 text-center hover:bg-blue-300 hover:text-white lg:px-12"
+            >
+              LIKE
+            </li>
+          </a>
+
+          <a href="../Nature-picture.jpg-.jpg">
+            <li
+              class="p-4 border-2 border-blue-400 text-center hover:bg-blue-300 hover:text-white lg:px-10"
+            >
+              ABOUT US
+            </li>
+          </a>
+        </ul>
+      </div>
+    </header>
+  </body>
+
+  <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</html>

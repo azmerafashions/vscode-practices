@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>variable</h1>
+    <script type="text/javascript">
+      document.write("variable declaration var variablename");
+      var count;
+      var br = " <br> </br>";
+
+      document.write(br + "variable initialization variablename = value");
+
+      count = 10;
+
+      document.write(br + "count is" + count);
+    </script>
+    <h1>operator</h1>
+    <script type="text/javascript">
+      var br = " <br> </br>";
+      document.write("logical operator" + br);
+      document.write("assingment operator =" + br);
+      var a = 10;
+      document.writeln("value of a is " + a + br);
+
+      document.writeln("comparator oprator" + br);
+      document.writeln("a < b" + (10 < 20) + br);
+      document.writeln("a==b" + (10 == 20) + br);
+    </script>
+    <h1>if condition</h1>
+    <script type="text/javascript">
+      document.write(
+        "if number is lessthen 10 then you r a fail.if number is grater then 10 then you r a excellent.if number is equal 10 then you r a pass."
+      );
+      var a = 10;
+      if (a < 10) {
+        document.write("you r a fail");
+      }
+      if (a > 10) {
+        document.write("you r a excellent");
+      }
+      if (a == 10) document.write("you r a pass");
+    </script>
+    <h1>if else ladder</h1>
+    <script type="text/javascript">
+      var br = " <br> </br>";
+      document.write(
+        "number is divided by 5,7,both then print divided by 5,7,both respectively." +
+          br
+      );
+      var a = 41;
+      if (a % 5 == 0 && a % 7 == 0) {
+        document.write("number is divided 5 and 7");
+      } else if (a % 7 == 0) document.write("number is divided by 7");
+      else if (a % 5 == 0) document.write("number is divided by 5");
+      else {
+        document.write("number is not divided by 5 or 7 or both");
+      }
+    </script>
+
+    <h1>ternary operator</h1>
+    <script type="text/javascript">
+      var a = 10;
+      a <= 10
+        ? document.write("number is lessthen or equal 10")
+        : document.write("number is greater than 10");
+    </script>
+    <h1>for loop</h1>
+    <script type="text/javascript">
+      var a = 0;
+      for (; a < 10; ) {
+        a++;
+        document.write("a=" + a + " ");
+      }
+      for (var a = 20; a < 50; a++) {
+        document.write("a=" + a + " ");
+      }
+    </script>
+    <h1>while loop</h1>
+    <script type="text/javascript">
+      var a = 0;
+      while (a < 10) {
+        a++;
+        document.write("a=" + a + " ");
+      }
+      while (a < 20) {
+        document.write("a=" + a + " ");
+        console.log("a=" + "i never stop");
+        a++;
+      }
+    </script>
+    <h1>switch cases</h1>
+    <script type="text/javascript">
+      var name = "zaha";
+      switch (name) {
+        case "azmera":
+          document.write("my name is azmera");
+          break;
+        case "fashion":
+          document.write("my fashion is passion");
+          break;
+        case "zara":
+          document.write("i dont have work and i think a lot ");
+          break;
+        default:
+          document.write("nothing macth in our cases");
+          break;
+      }
+    </script>
+
+    <h1>continue</h1>
+    <script type="text/javascript">
+      for (var a = 0; a < 10; a++) {
+        if (a > 5 && a < 8) {
+          continue;
+        }
+        document.write("a=" + a + " ");
+      }
+    </script>
+    <h1>break</h1>
+    <script type="text/javascript">
+      var a = 0;
+      while (a <= 10) {
+        if (a > 5) {
+          break;
+        }
+        document.write("a=" + a + " ");
+        a++;
+      }
+    </script>
+    <h1>Function Without parameter-list</h1>
+    <input type="button" onclick="addNumber()" value="zara" />
+    <script type="text/javascript">
+      function addNumber() {
+        var sum = 0;
+        for (a = 1; a <= 6; a++) {
+          sum = sum + a;
+        }
+        document.write("sum=" + sum);
+      }
+    </script>
+  </body>
+</html>

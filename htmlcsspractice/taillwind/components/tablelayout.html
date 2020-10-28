@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Layout</title>
+  </head>
+  <body class="border-2 w-full h-full">
+    <div class="border-2 border-green-200">
+      <h1 class="rounded text-center text-2xl bg-gray-600">
+        Users
+      </h1>
+
+      <table class="table-fixed border-collapse w-full">
+        <thead>
+          <tr>
+            <th>Picture</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-blue-200">
+            <td><img src="../bird.jpg" class="rounded-full" alt="" /></td>
+            <td class="">Jane Doe</td>
+            <td class="">jane.doe@foo.com</td>
+            <td class="">018002000</td>
+            <td class="">
+              lorem ispum dolor sit amet,consecteture adipisicing elit.
+            </td>
+          </tr>
+          <tr class="bg-blue-100">
+            <td><img src="Penguins.jpg" class="rounded-full" alt="" /></td>
+            <td class="">John Doe</td>
+            <td class="">john.doe@foo.com</td>
+            <td class="">018002000</td>
+            <td class="">taka</td>
+          </tr>
+          <tr class="bg-blue-200">
+            <td><img src="flower.jpg" class="rounded-full" alt="" /></td>
+            <td class="">Jane Smith</td>
+            <td class="">jane.smith@foo.com</td>
+            <td class="">018002000</td>
+            <td class="">euro</td>
+          </tr>
+          <tr class="bg-blue-100">
+            <td>
+              <img src="../organic.jpg" class="rounded-full" alt="" />
+            </td>
+            <td class="">John Smith</td>
+            <td class="">john.smith@foo.com</td>
+            <td class="">018002000</td>
+            <td class="">rupee</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <style>
+    td {
+      @apply px-2;
+    }
+  </style>
+  <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</html>

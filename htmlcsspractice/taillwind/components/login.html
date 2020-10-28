@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+  </head>
+
+  <body class="w-full h-full">
+    <div class="p-24 h-screen bg-gray-300 border-2 border-green-600">
+      <div class="flex flex-col sm:flex-row w-full h-full px-4">
+        <div
+          class="items-center text-white w-1/2 bg-center bg-cover flex flex-col text-2xl pt-24 rounded-lg"
+          style="background-image: url('../bird.jpg');"
+        >
+          <!-- <img src="../organic.jpg" class="text p-4" alt="logo" /> -->
+          <h1>
+            Welcome back!
+          </h1>
+          <h1>
+            We are glad to see you again.
+          </h1>
+        </div>
+        <div class="p-24 w-1/2 flex flex-col justify-center h-full">
+          <h1 class="mb-4 font-extrabold">LOG In</h1>
+
+          <form action="login.html">
+            <div class="flex flex-col">
+              <label class="mb-2" for=""> Email Address</label>
+
+              <input
+                class="mb-4 p-2"
+                type="text"
+                placeholder="Enter Your Email"
+              />
+
+              <label class="mb-2" for="">Password</label>
+
+              <input
+                class="mb-4 p-2"
+                type="text"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="flex flex-row justify-between mb-4">
+              <div class="mr-4">
+                <input type="checkbox" />
+                <label for=" ">Remember me </label>
+              </div>
+              <p class="text-green-600">Forgot Password ?</p>
+            </div>
+
+            <div class="mb-4 flex flex-col">
+              <button
+                class="border w-full shadow shadow-lg bg-green-600 hover:bg-green-300 text-white p-2"
+              >
+                Login
+              </button>
+              <div class="flex flex-row m-4 justify-center">
+                <p>Don't have an account ?</p>
+                <label class="text-green-600">Sign up</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <link
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    rel="stylesheet"
+  />
+</html>

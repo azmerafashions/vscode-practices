@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> </title>
+  </head>
+  <body class="image">
+    <header>
+      <div class="headerflex borders fontstyle">
+        <img src="Penguins.jpg" witdh="40px" height="40px" alt="" />
+        <div class="myflex linksgrow">
+          <a href="">HOME </a>
+          <a href="">BLOG </a>
+          <a href="">JOIN US</a>
+          <a href="">ABOUT US</a>
+        </div>
+      </div>
+    </header>
+
+    <h1>This is my web page</h1>
+
+    <a href="www.google.com">yellow </a>
+    <br />
+    <input type="text" class="input" placeholder="Enter your name" />
+    <br />
+    <input type="password" class="input" placeholder="Enter your password" />
+    <br />
+    <input
+      type="text area"
+      class="input"
+      placeholder="Enter your favourite things"
+    />
+    <br />
+    <ul class="flex">
+      <li>
+        <p>this is 1st paragraph</p>
+      </li>
+      <li>
+        <p>this is my 2nd paragraph</p>
+      </li>
+
+      <li>
+        <p>this is my 3rd paragraph</p>
+      </li>
+
+      <li>
+        <p>this is my 4th paragraph</p>
+      </li>
+    </ul>
+    <br />
+    <ol>
+      <li>red</li>
+      <li>blue</li>
+      <li>green</li>
+      <li>yellow</li>
+      <li>purple</li>
+    </ol>
+    <div>
+      <p id="lilly"></p>
+    </div>
+    <div>
+      <form action="./css1.html">
+        <input type="text area" placeholder="enter your favourite things" />
+        <input type=" " placeholder="enter your password" />
+      </form>
+    </div>
+  </body>
+
+  <style type="text/css">
+    .borders {
+      background-color: lawngreen;
+      border-style: solid;
+      border-width: 4px;
+      border-radius: 5px;
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .myflex {
+      display: flex;
+      flex-direction: row;
+
+      justify-content: space-around;
+      align-items: center;
+    }
+    .headerflex {
+      display: flex;
+      border-style: solid;
+      border-color: crimson;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .linksgrow {
+      flex-grow: 8;
+    }
+    .input {
+      background-color: honeydew;
+      border-color: lightgreen;
+      padding: 4px;
+      margin: 10px;
+    }
+    .image {
+      background-image: url("Penguins.jpg");
+    }
+    .fontstyle {
+      font-style: italic;
+    }
+  </style>
+</html>
